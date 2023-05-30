@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Roboto&display=swap");
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  opacity: 1;
+  background-image: linear-gradient(30deg, #660708 12%, transparent 12.5%, transparent 87%, #660708 87.5%, #660708), linear-gradient(150deg, #660708 12%, transparent 12.5%, transparent 87%, #660708 87.5%, #660708), linear-gradient(30deg, #660708 12%, transparent 12.5%, transparent 87%, #660708 87.5%, #660708), linear-gradient(150deg, #660708 12%, transparent 12.5%, transparent 87%, #660708 87.5%, #660708), linear-gradient(60deg, rgba(102, 7, 8, 0.4666666667) 25%, transparent 25.5%, transparent 75%, rgba(102, 7, 8, 0.4666666667) 75%, rgba(102, 7, 8, 0.4666666667)), linear-gradient(60deg, rgba(102, 7, 8, 0.4666666667) 25%, transparent 25.5%, transparent 75%, rgba(102, 7, 8, 0.4666666667) 75%, rgba(102, 7, 8, 0.4666666667));
+  background-size: 34px 60px;
+  background-position: 0 0, 0 0, 17px 30px, 17px 30px, 0 0, 17px 30px;
+}
+
+.calculator {
+  width: 40vh;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 32px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 4em;
+  padding: 1.5em;
+}
+.output p.entry {
+  font-size: 2em;
+  font-family: "Orbitron", sans-serif;
+  max-width: 100%;
+  word-break: break-all;
+  white-space: normal;
+  margin: 0em;
+  box-sizing: border-box;
+}
+.output p.expression {
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  max-width: 100%;
+  margin: 0em;
+  box-sizing: border-box;
+  flex-basis: 1.2em;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1em;
+}
+
+.button {
+  aspect-ratio: 1;
+  width: calc(25% - 0.75em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+.button p {
+  font-size: 2em;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.button:active {
+  background: #e0e0e0;
+  box-shadow: inset 7px 7px 14px #bebebe, inset -7px -7px 14px #ffffff, 2px 2px 12px 2px #000000;
+}
+.button:hover {
+  background-color: #cfcfcf;
+}
+
+.output,
+.button {
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 2px 2px 12px 2px #000000;
+}
+
+.op {
+  background-color: #80ed99;
+}
+.op:active {
+  background: #48db6a;
+  box-shadow: inset 7px 7px 14px #3dba5a, inset -7px -7px 14px #53fc7a, 2px 2px 12px 2px #000000;
+}
+.op:hover {
+  background-color: #48db6a;
+}
+
+.equals {
+  background-color: #e4c1f9;
+}
+.equals:active {
+  background: #d29cf1;
+  box-shadow: inset 7px 7px 14px #b385cd, inset -7px -7px 14px #f2b3ff, 2px 2px 12px 2px #000000;
+}
+.equals:hover {
+  background-color: #d29cf1;
+}/*# sourceMappingURL=main.css.map */
